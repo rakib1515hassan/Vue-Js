@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 bg-primary text-center text-light">Vue JS</h1>
+        <h4 class="text-center">Learn 
+            <span class="text-success">Directives: V-bind</span> property
+        </h4><hr>
+
+
+
+        <div id="info">
+            <p><strong>Title:</strong> {{ title }}</p>
+            <p>Click <a v-bind:href="office_like">here</a></p>
+            <p v-text="my_text"></p>
+            <p v-html="friend_name"></p>
+
+            <img class="w-25 h-25" v-bind:src="image_src" v-bind:alt="image_alt" ><hr>
+
+            <p>Rakib 
+                <span v-if="rakib_age >= age">selected</span> 
+                <span v-else>is not selected</span> 
+                for NID Card
+
+                <span v-if="nidPermissionRakib()">True</span>   
+            </p>
+
+            <p>Rijon 
+                <span v-if="rijon_age >= age">selected</span> 
+                <span v-else>is not selected</span> 
+                for NID Card
+
+                <span>{{ nidPermissionRijon().toString() }}</span>
+            </p>
+
+            <p>Emon 
+                <span v-if="emon_age >= age">selected</span> 
+                <span v-else>is not selected</span> 
+                for NID Card
+
+                <span v-html="nidPermissionEmon()"></span>
+            </p>
+
+        </div>
+    </div>
+    
+
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- Vue 2.7 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+    
+</body>
+</html>

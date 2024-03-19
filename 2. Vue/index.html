@@ -12,30 +12,18 @@
 <body>
     <div class="container">
         <h1 class="mt-5 bg-primary text-center text-light">Vue JS</h1>
-        <h4 class="text-center">Learn <span class="text-success">el</span> and <span class="text-success">data</span> property</h4><hr>
-
+        <h4 class="text-center">Learn 
+            <span class="text-success">Methods</span> property
+        </h4><hr>
         
 
         <div id="info">
-            <p><strong>Name:</strong> {{name}}</p>
+            <p><strong>Name:</strong> {{ full_name() }}</p>
 
-            <p><strong>Work:</strong> {{work}}</p>
-
-            <p><strong>Student:</strong> {{student}}</p>
-
-            <p><strong>Skill:</strong> 
-                <span>{{skill[0]}}</span>
-                <span>{{skill[1]}}</span>
-                <span>{{skill[2]}}</span>
-            </p>
-    
-            <p><strong>Address: </strong>
-                <span>{{address.jila}}</span>,
-                <span>{{address.division}}</span>,
-                <span>{{address.country}}</span>,
-            </p>
-    
-            <p><strong>Experience:</strong> {{experience()}}</p>
+            <p><strong>Age:</strong> {{ age() }}</p>
+            <p><strong>Experience:</strong> {{ experience() }}</p>
+            <p><strong>Description:</strong> {{ description() }}</p>
+            <p><strong>Device:</strong> {{ device() }}</p>
         </div>
     </div>
     
